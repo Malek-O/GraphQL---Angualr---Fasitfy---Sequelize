@@ -1,0 +1,22 @@
+<!-- <p>todos works!</p>
+ interpiliation 
+<p>{{description}}</p>
+
+ Data binding 
+<input type="text" [value]="description">
+
+ directive 
+<input type="text" [(ngModel)]="description">
+ -->
+<h1 class="text-center">My Todos</h1>
+<ul class="list-group w-50 mx-auto mt-5">
+    <li class="list-group-item" *ngFor="let todo of todos">
+        <span class="fw-bold">Description:</span>
+        {{todo.description}}
+        <div>
+            <span class="fw-bold">Status:</span>
+            {{todo.status}}
+        </div>
+    </li>
+
+</ul>
